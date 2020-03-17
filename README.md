@@ -1,2 +1,7 @@
-# DatabaseProject2
- Library Database
+# Library Database Project
+This project interacts with a MySQL database through a GUI to manage books and borrowers.
+
+### Instructions
+In order to get this project working on your device, you will need to install connector/J jar file from the MySQL website. The version I used for the project was 8.0.19
+You will also need to start the MySQL server from your command line. Once it is running, you will need create a new schema called "library". If you want to name it something else, you will need to change the _String url = "jdbc:mysql://localhost:3306/library";_ to correspond to what you named it (also change the port number if it is different). After the schema has been created, you will need to run the sql script that is provided on the Github. You will need to run it on the command line while you are using the library schema with the "source" command, the line will look like "source dbCreate.sql". **This might take a while depending on the power of the computer that it is running on.** After the script is done running, the database should be ready to go to test. From here you almost be ready to run the java code but, you will need to add the connector/J as an external library.
+With all of the prerequisites out of the way, you should be able to run the program. There will be a pop up window that will ask for you username (by default it is root) and password for the MySQL server that is running on your command line. After entering the correct username and password, you should be able to use the GUI.
